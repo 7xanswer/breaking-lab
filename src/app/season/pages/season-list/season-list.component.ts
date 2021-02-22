@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Season } from 'src/app/core/models/season';
+import { SeasonService } from 'src/app/core/services/http/season.service';
 
 @Component({
   selector: 'app-season-list',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeasonListComponent implements OnInit {
 
-  constructor() { }
+  seasons$: Observable<Season[]>
+  displayedColumns: string[] = ["id", "releaseDate", "finalDate", "episodes"]
+
+  constructor(private _seasonService: SeasonService) { }
 
   ngOnInit(): void {
+    this.seasons$ = this._seasonService.get();
   }
 
 }

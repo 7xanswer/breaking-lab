@@ -1,6 +1,6 @@
 export interface Season {
     id: number;
-    releaseDate: string;
-    finalDate: string;
+    release_date: string;
+    final_date: string;
     episodes: number;
 }
