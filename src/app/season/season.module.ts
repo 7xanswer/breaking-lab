@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SeasonComponent } from './season.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [SeasonComponent],
   imports: [
     CommonModule
   ]
