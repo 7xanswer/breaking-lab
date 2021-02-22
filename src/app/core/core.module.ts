@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { SeasonService } from './services/http/season.service';
 import { HttpClientModule } from '@angular/common/http';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 
 
@@ -10,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [HeaderComponent],
   imports: [
     CommonModule,
+    MatToolbarModule,
     HttpClientModule
   ],
   providers: [SeasonService],

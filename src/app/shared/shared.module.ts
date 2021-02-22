@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { MatTableModule } from '@angular/material/table';
+
 
 
 
@@ -8,7 +10,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 @NgModule({
   declarations: [NotFoundComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MatTableModule
   ]
 })
 export class SharedModule { }

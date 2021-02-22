@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Season } from '../core/models/season';
+import { SeasonService } from '../core/services/http/season.service';
 
 @Component({
   selector: 'app-season',
