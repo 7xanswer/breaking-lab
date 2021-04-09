@@ -6,17 +6,21 @@ import { SeasonService } from 'src/app/core/services/http/season.service';
 @Component({
   selector: 'app-season-list',
   templateUrl: './season-list.component.html',
-  styleUrls: ['./season-list.component.scss']
+  styleUrls: ['./season-list.component.scss'],
 })
 export class SeasonListComponent implements OnInit {
+  seasons$: Observable<Season[]>;
+  displayedColumns: string[] = [
+    'id',
+    'releaseDate',
+    'finalDate',
+    'episodes',
+    'introduction',
+  ];
 
-  seasons$: Observable<Season[]>
-  displayedColumns: string[] = ["id", "releaseDate", "finalDate", "episodes"]
-
-  constructor(private _seasonService: SeasonService) { }
+  constructor(private _seasonService: SeasonService) {}
 
   ngOnInit(): void {
     this.seasons$ = this._seasonService.get();
   }
-
 }

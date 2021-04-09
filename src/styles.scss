@@ -1,4 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --charcoal: #2d2d2d;
+  --royal: #004fff;
+  --cloud: #e1e7eb;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--charcoal);
+}
+
+#navbar {
+  background-color: var(--royal);
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: var(--charcoal);
+  font-size: 1rem;
+}
+
+span {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: white;
+}

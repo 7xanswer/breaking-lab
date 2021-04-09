@@ -4,31 +4,36 @@
       "id": 1,
       "release_date": "01-20-2008",
       "final_date": "03-09-2008",
-      "episodes": 7
+      "episodes": 7,
+      "introduction": "Walter, diagnosed with inoperable lung cancer, conspires with Jesse to cook methamphetamine (\"meth\") as a way to pay for his treatment and provide financial security for his family."
     },
     {
       "id": 2,
       "release_date": "03-08-2009",
       "final_date": "05-31-2009",
-      "episodes": 13
+      "episodes": 13,
+      "introduction": "Jesse's dealers become unsafe, and Walter hires a corrupt lawyer Saul Goodman to connect them to a high-profile drug dealer Gus as a buyer for their latest batch."
     },
     {
       "id": 3,
       "release_date": "03-21-2010",
       "final_date": "06-13-2010",
-      "episodes": 13
+      "episodes": 13,
+      "introduction": "Gus offers Walter a job cooking meth at a hidden lab. Walter demands Jesse to be his assistant rather than Gus' choice of Gale. Skyler learns of Walter's meth cooking and demands a divorce."
     },
     {
       "id": 4,
       "release_date": "07-17-2011",
       "final_date": "10-09-2011",
-      "episodes": 13
+      "episodes": 13,
+      "introduction": "Gus tightens security at the lab after Gale's death. Gus and Mike work to drive a wedge between Walter and Jesse, seeking to coerce Jesse to be their solitary cook by capturing Walter while at the same time eliminating the Mexican cartel."
     },
     {
       "id": 5,
       "release_date": "07-15-2012",
       "final_date": "09-29-2013",
-      "episodes": 16
+      "episodes": 16,
+      "introduction": "After Gus' death, Walter, Jesse, and Mike start a new meth business. When their accomplice Todd kills a child witness during their theft of methylamine, Jesse and Mike sell their share of the methylamine to Declan, another distributor."
     }
   ],
   "episodes": [
