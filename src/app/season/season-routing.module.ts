@@ -13,6 +13,7 @@ const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
+        component: SeasonListComponent,
       },
       {
         path: 'seasons',
