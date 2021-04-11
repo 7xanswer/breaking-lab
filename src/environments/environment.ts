@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   seasonEndpoint: 'http://localhost:3000/seasons',
+  episodeEndpoint: 'http://localhost:3000/episodes',
 };
 
 /*

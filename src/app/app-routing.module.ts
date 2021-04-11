@@ -16,6 +16,12 @@ const routes: Routes = [
       import('./season/season.module').then((m) => m.SeasonModule),
   },
   {
+    path: 'episodes',
+    pathMatch: 'full',
+    loadChildren: () =>
+      import('./episode/episode.module').then((m) => m.EpisodeModule),
+  },
+  {
     path: '**',
     component: NotFoundComponent,
   },

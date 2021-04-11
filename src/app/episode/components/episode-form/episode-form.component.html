@@ -1,0 +1,64 @@
+<form [formGroup]="episodeForm" (ngSubmit)="onSubmit(episodeForm.value)">
+  <mat-dialog-content class="d-flex flex-column">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="31/12/1999" type="text" formControlName="title" required>
+      <mat-icon matSuffix color="primary" fontSet="material-icons-round">bookmark</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Synopsis</mat-label>
+      <textarea required matInput formControlName="synopsis" placeholder="Once upon a time ..." rows="10"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Season number</mat-label>
+      <input matInput placeholder="420" type="number" formControlName="season_id" required>
+      <mat-icon matSuffix color="warn" fontSet="material-icons-round">tv</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Episode number</mat-label>
+      <input matInput placeholder="3" type="number" formControlName="episode" required>
+      <mat-icon matSuffix color="warn" fontSet="material-icons-round">movie</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Air date</mat-label>
+      <input matInput placeholder="01/06/2021" type="text" formControlName="air_date" required>
+      <mat-icon matSuffix color="primary" fontSet="material-icons-round">event_available</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Rating</mat-label>
+      <input matInput placeholder="9" type="number" formControlName="rating" required>
+      <mat-icon matSuffix color="accent" fontSet="material-icons-round">star</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>IMDb</mat-label>
+      <input matInput placeholder="https://www.imdb.com/title/tt9243946/" type="text" formControlName="imdb" required>
+      <mat-icon matSuffix color="primary" fontSet="material-icons-round">trending_up</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Netflix</mat-label>
+      <input matInput placeholder="https://www.netflix.com/watch/81078819/" type="text" formControlName="netflix" required>
+      <mat-icon matSuffix color="warn" fontSet="material-icons-round">chair</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Thumbnail</mat-label>
+      <input matInput placeholder="https://www.fbi.gov/wanted/notme.jpg" type="text" formControlName="thumbnail" required>
+      <mat-icon matSuffix color="primary" fontSet="material-icons-round">crop_original</mat-icon>
+    </mat-form-field>
+    
+  </mat-dialog-content>
+
+  <p>{{episodeForm.valid}}</p>
+  <mat-dialog-actions align="center">
+    <button mat-dialog-close class="mat-elevation-z6" mat-raised-button color="warn">Cancel</button>
+    <button class="mat-elevation-z6" mat-raised-button color="primary" type="submit" cdkFocusInitial [disabled]="!episodeForm.valid">{{formAction}}</button>
+  </mat-dialog-actions>
+</form>
