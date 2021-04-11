@@ -16,11 +16,15 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [NotFoundComponent],
   imports: [CommonModule],
   exports: [
+    MatSidenavModule,
+    MatStepperModule,
     MatBadgeModule,
     MatProgressBarModule,
     MatDividerModule,

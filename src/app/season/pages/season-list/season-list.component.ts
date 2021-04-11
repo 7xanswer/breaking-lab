@@ -29,6 +29,8 @@ export class SeasonListComponent implements OnInit {
     public dialog: MatDialog
   ) {}
 
+  isLinear = false;
+
   ngOnInit(): void {
     this.loadData();
   }
