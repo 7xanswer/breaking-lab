@@ -1,0 +1,34 @@
+<form [formGroup]="seasonForm" (ngSubmit)="onSubmit(seasonForm.value)">
+  <mat-dialog-content class="d-flex flex-column">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Release date</mat-label>
+      <input matInput placeholder="31/12/1999" type="text" formControlName="release_date" required>
+      <mat-icon matSuffix color="primary" fontSet="material-icons-round">event_available</mat-icon>
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Final date</mat-label>
+      <input matInput placeholder="20/03/2000" type="text" formControlName="final_date" required>
+      <mat-icon matSuffix color="accent" fontSet="material-icons-round">event_busy</mat-icon>
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Number of episodes</mat-label>
+      <input matInput placeholder="420" type="number" formControlName="episodes" required>
+      <mat-icon matSuffix color="warn" fontSet="material-icons-round">movie</mat-icon>
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Introduction</mat-label>
+      <textarea required matInput formControlName="introduction" placeholder="Once upon a time ..." rows="10"></textarea>
+    </mat-form-field>
+
+  </mat-dialog-content>
+
+    <p>{{seasonForm.valid}}</p>
+    <mat-dialog-actions align="center">
+      <button mat-dialog-close class="mat-elevation-z6" mat-raised-button color="warn">Cancel</button>
+      <button class="mat-elevation-z6" mat-raised-button color="primary" type="submit" cdkFocusInitial [disabled]="!seasonForm.valid">{{formAction}}</button>
+    </mat-dialog-actions>
+  </form>

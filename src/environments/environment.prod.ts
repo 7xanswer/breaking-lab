@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  seasonEndpoint: 'http://localhost:3000/seasons',
 };

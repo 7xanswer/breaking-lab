@@ -3,21 +3,3 @@
   height: 100%;
   padding: 2rem !important;
 }
-
-@font-face {
-  font-family: "The Bold Font";
-  src: url("/assets/fonts/theboldfont-webfont.woff2") format("woff2"),
-    url("/assets/fonts/theboldfont-webfont.woff") format("woff");
-}
-
-h1 {
-  font-family: "The Bold Font", sans-serif;
-  font-size: 3rem !important;
-  color: var(--royal);
-}
-
-h3 {
-  font-family: "The Bold Font", sans-serif;
-  color: var(--royal);
-  font-size: 2rem !important;
-}

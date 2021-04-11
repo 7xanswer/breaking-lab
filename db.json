@@ -1,18 +1,18 @@
 {
   "seasons": [
     {
-      "id": 1,
       "release_date": "01-20-2008",
       "final_date": "03-09-2008",
       "episodes": 7,
-      "introduction": "Walter, diagnosed with inoperable lung cancer, conspires with Jesse to cook methamphetamine (\"meth\") as a way to pay for his treatment and provide financial security for his family."
+      "introduction": "Walter, diagnosed with inoperable lung cancer, conspires with Jesse to cook methamphetamine (\"meth\") as a way to pay for his treatment and provide financial security for his family.",
+      "id": 1
     },
     {
-      "id": 2,
       "release_date": "03-08-2009",
       "final_date": "05-31-2009",
       "episodes": 13,
-      "introduction": "Jesse's dealers become unsafe, and Walter hires a corrupt lawyer Saul Goodman to connect them to a high-profile drug dealer Gus as a buyer for their latest batch."
+      "introduction": "Jesse's dealers become unsafe, and Walter hires a corrupt lawyer Saul Goodman to connect them to a high-profile drug dealer Gus as a buyer for their latest batch.",
+      "id": 2
     },
     {
       "id": 3,
