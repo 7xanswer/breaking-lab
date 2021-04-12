@@ -17,3 +17,10 @@
 .imdb {
   border-radius: 10px 4px 4px 4px;
 }
+
+::ng-deep.mat-paginator .mat-paginator-container{
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: var(--charcoal);
+  padding: 0;
+}

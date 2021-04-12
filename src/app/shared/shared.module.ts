@@ -18,11 +18,13 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [NotFoundComponent],
   imports: [CommonModule],
   exports: [
+    MatPaginatorModule,
     MatSidenavModule,
     MatStepperModule,
     MatBadgeModule,

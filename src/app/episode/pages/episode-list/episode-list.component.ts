@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
 import { Episode } from 'src/app/core/models/episode';
 import { MatDialog } from '@angular/material/dialog';
 import { EpisodeService } from 'src/app/core/services/http/episode.service';
@@ -14,7 +14,8 @@ import { EpisodeFormData } from 'src/app/core/models/episode-form-data';
 export class EpisodeListComponent implements OnInit {
   episodes$: Observable<Episode[]>;
   episodesDetail: Observable<Episode>;
-  displayedColumns: string[] = [
+
+  /*displayedColumns: string[] = [
     'id',
     'title',
     'season_id',
@@ -25,21 +26,23 @@ export class EpisodeListComponent implements OnInit {
     'synopsis',
     'netflix',
     'thumbnail',
-  ];
+  ];*/
 
   constructor(
     private _episodeService: EpisodeService,
-    public dialog: MatDialog
-  ) {}
+    public dialog: MatDialog){
+  }
 
-  isLinear = false;
-
-  ngOnInit(): void {
+  ngOnInit() {
     this.loadData();
   }
 
   loadData() {
     this.episodes$ = this._episodeService.get();
+  }
+
+  search() {
+    this.episodes$ = this._episodeService.descSearch();
   }
 
   delete(episode: Episode) {

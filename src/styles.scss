@@ -60,3 +60,8 @@ textarea {
   font-family: "Quicksand", sans-serif !important;
   font-weight: 400;
 }
+
+*:focus:not(:focus-visible) {
+  outline: 0 !important;
+  box-shadow: none !important;
+}

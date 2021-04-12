@@ -170,7 +170,6 @@
       "thumbnail": "https://occ-0-55-56.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWsexUuGwrgQSe0SWsTCXZ7b1gIpvDEm4STEMnpRpxYdNQHCHfS7hahkFYUPd4KpSP9Pds79AVfBJ63YDahhzmbi92apRWLRuZNJMcV_Oy9ES95w.webp"
     },
     {
-      "id": 12,
       "title": "Breakage",
       "synopsis": "Hank tries to pull himself together after his encounter with Tuco. Meanwhile, Jesse assembles a crew to get more product on the street.",
       "season_id": 2,
@@ -179,7 +178,8 @@
       "rating": 8.4,
       "imdb": "https://www.imdb.com/title/tt1232252/?ref_=ttep_ep5",
       "netflix": "https://www.netflix.com/watch/70196263/",
-      "thumbnail": "https://occ-0-55-56.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbJoeh3QR_86qqI2RH3dBD_lezbYojI1aFjmSEOLAkT8e1JMi_pTIclEOr7X5tL9LmGMSip_q4lI1BbI2khncDZGc2O87sraPwnnFCU8uxqvq03c.webp"
+      "thumbnail": "https://occ-0-55-56.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbJoeh3QR_86qqI2RH3dBD_lezbYojI1aFjmSEOLAkT8e1JMi_pTIclEOr7X5tL9LmGMSip_q4lI1BbI2khncDZGc2O87sraPwnnFCU8uxqvq03c.webp",
+      "id": 12
     },
     {
       "id": 13,

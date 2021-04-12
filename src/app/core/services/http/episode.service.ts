@@ -7,6 +7,7 @@ import { Episode } from '../../models/episode';
 @Injectable({
   providedIn: 'root',
 })
+
 export class EpisodeService {
   endPoint: string = environment.episodeEndpoint;
 
@@ -37,5 +38,11 @@ export class EpisodeService {
 
   delete(episode: Episode): Observable<Episode> {
     return this._httpClient.delete<Episode>(this.endPoint + '/' + episode.id);
+  }
+
+  descSearch(): Observable<Episode[]> {
+    return this._httpClient.get<Episode[]>(
+      this.endPoint + '?_sort=id&_order=desc'
+    );
   }
 }
