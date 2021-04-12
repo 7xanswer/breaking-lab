@@ -14,8 +14,8 @@
     <div
       *ngFor="let episode of episodes$ | async |
         slice:((paginator.pageIndex)*paginator.pageSize):((paginator.pageIndex+1)*paginator.pageSize)"
-      fxFlex="25%" fxFlex.md="50%" fxFlex.sm="50%" fxFlex.xs="100%">
-      <mat-card id="card" class="mat-elevation-z6">
+      fxFlex="25%" fxFlex.md="50%" fxFlex.sm="50%" fxFlex.xs="100%" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10">
+      <mat-card id="card" class="mat-elevation-z6" >
         <img mat-card-image class="mb-0"id="thumbnail" src="{{episode.thumbnail}}" alt="Photo of a Shiba Inu">
         <div class="watch">
           <a href="{{episode.imdb}}" target="_blank">
