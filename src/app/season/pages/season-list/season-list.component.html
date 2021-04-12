@@ -5,9 +5,10 @@
       <mat-icon class="ml-1" fontSet="material-icons-round">lightbulb</mat-icon>
     </button>
   </div>
-  <div fxLayout="row wrap" fxLayoutGap="1rem grid">
-    <div *ngFor="let season of seasons$ | async" fxFlex="25%" fxFlex.md="50%" fxFlex.sm="100%" fxFlex.xs="100%">
-      <mat-card id="card" class="mat-elevation-z6">
+  <div fxLayout="row wrap" fxLayoutGap="1.5rem grid">
+    <div *ngFor="let season of seasons$ | async"
+         fxFlex="25%" fxFlex.md="50%" fxFlex.sm="100%" fxFlex.xs="100%" data-aos="fade-up" data-aos-duration="1000">
+      <mat-card id="card" appMaterialElevation [defaultElevation]="6" raisedElevation="24">
         <mat-card-content>
           <button mat-raised-button class="mat-elevation-z6 mb-4" color="white">
             <mat-icon class="mr-1" fontSet="material-icons">timeline</mat-icon>

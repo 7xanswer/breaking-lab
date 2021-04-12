@@ -19,11 +19,14 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MaterialElevationDirective } from '../material-elevation.directive';
+
 
 @NgModule({
-  declarations: [NotFoundComponent],
+  declarations: [NotFoundComponent, MaterialElevationDirective],
   imports: [CommonModule],
   exports: [
+    MaterialElevationDirective,
     MatPaginatorModule,
     MatSidenavModule,
     MatStepperModule,
