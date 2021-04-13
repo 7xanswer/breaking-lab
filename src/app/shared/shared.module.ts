@@ -17,15 +17,23 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatStepperModule } from '@angular/material/stepper';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MaterialElevationDirective } from '../material-elevation.directive';
-
+import {MatListModule} from '@angular/material/list';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {LayoutModule} from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [NotFoundComponent, MaterialElevationDirective],
   imports: [CommonModule],
   exports: [
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
     MaterialElevationDirective,
     MatPaginatorModule,
     MatSidenavModule,

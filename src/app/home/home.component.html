@@ -3,7 +3,14 @@
         <div class="col-md-6">
             <h1>Breaking Lab</h1>
             <p>Breaking Lab is an Angular 9 SPA that allows anyone to create, modify or delete elements of the Breaking Bad series timeline.</p>
-            <!--<button [routerLink]="['seasons']"></button>-->
+            <button mat-raised-button class="my-3 mr-3 mat-elevation-z6" color="warn">
+              Browse episodes
+              <mat-icon class="ml-1" fontSet="material-icons-round">movie</mat-icon>
+            </button>
+          <button mat-raised-button class="mat-elevation-z6" color="accent">
+            Browse seasons
+            <mat-icon class="ml-1" fontSet="material-icons-round">tv</mat-icon>
+          </button>
         </div>
     </div>
 </div>

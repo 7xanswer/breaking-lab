@@ -10,7 +10,7 @@
                  [pageSize]="8"
                  [pageSizeOptions]="[4, 8, 16, 32]">
   </mat-paginator>
-  <div fxLayout="row wrap" fxLayoutGap="1.5rem grid">
+  <div fxLayout="row wrap" fxLayoutGap="0.8rem grid">
     <div
       *ngFor="let episode of episodes$ | async |
         slice:((paginator.pageIndex)*paginator.pageSize):((paginator.pageIndex+1)*paginator.pageSize)"
@@ -21,13 +21,13 @@
           <a href="{{episode.imdb}}" target="_blank">
             <button class="imdb mat-elevation-z6 mr-2" mat-raised-button color="accent">
               <mat-icon class="mr-1" fontSet="material-icons-round">verified</mat-icon>
-              IMDb review
+              IMDb
             </button>
           </a>
           <a href="{{episode.netflix}}" target="_blank">
             <button class="mat-elevation-z6" mat-raised-button color="warn">
               <mat-icon class="mr-1" fontSet="material-icons-round">chair</mat-icon>
-              Watch on Netflix
+              Netflix
             </button>
           </a>
         </div>
@@ -39,7 +39,7 @@
             </mat-chip>
             <mat-chip color="primary" selected>
               <mat-icon class="mr-1" fontSet="material-icons-round">tv</mat-icon>
-              <span>Season : {{episode.season_id}}</span>
+              <span>Season : {{episode.seasonId}}</span>
             </mat-chip>
             <mat-chip color="warn" selected>
               <mat-icon class="mr-1" fontSet="material-icons-round">movie</mat-icon>

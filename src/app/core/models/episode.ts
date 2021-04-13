@@ -2,7 +2,7 @@ export interface Episode {
   id: number;
   title: string;
   synopsis: string;
-  season_id: number;
+  seasonId: number;
   episode: number;
   air_date: string;
   rating: number;

@@ -24,6 +24,10 @@ const routes: Routes = [
         component: SeasonDetailComponent,
       },
       {
+        path: 'seasons/:id',
+        component: SeasonDetailComponent,
+      },
+      {
         path: '**',
         component: NotFoundComponent,
       },

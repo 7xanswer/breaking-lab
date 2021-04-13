@@ -38,7 +38,7 @@ export class EpisodeFormComponent implements OnInit {
           data.episode.synopsis,
           [Validators.required, this.noWhitespaceValidator],
         ],
-        season_id: [data.episode.season_id, [Validators.required]],
+        season_id: [data.episode.seasonId, [Validators.required]],
         episode: [data.episode.episode, [Validators.required]],
         air_date: [data.episode.air_date, [Validators.required]],
         rating: [data.episode.rating, [Validators.required]],

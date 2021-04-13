@@ -8,6 +8,7 @@ import { Season } from '../../models/season';
   providedIn: 'root',
 })
 export class SeasonService {
+
   endPoint: string = environment.seasonEndpoint;
 
   constructor(private _httpClient: HttpClient) {}

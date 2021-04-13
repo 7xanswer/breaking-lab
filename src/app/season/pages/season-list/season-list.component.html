@@ -5,7 +5,7 @@
       <mat-icon class="ml-1" fontSet="material-icons-round">lightbulb</mat-icon>
     </button>
   </div>
-  <div fxLayout="row wrap" fxLayoutGap="1.5rem grid">
+  <div fxLayout="row wrap" fxLayoutGap="0.8rem grid">
     <div *ngFor="let season of seasons$ | async"
          fxFlex="25%" fxFlex.md="50%" fxFlex.sm="100%" fxFlex.xs="100%" data-aos="fade-up" data-aos-duration="1000">
       <mat-card id="card" appMaterialElevation [defaultElevation]="6" raisedElevation="24">
@@ -19,6 +19,7 @@
               <mat-icon class="mr-1" fontSet="material-icons-round">visibility</mat-icon>
               <span>Season n° : {{season.id}}</span>
             </mat-chip>
+
             <mat-chip color="primary" selected>
               <mat-icon class="mr-1" fontSet="material-icons-round">event_available</mat-icon>
               <span>Release date : {{season.release_date}}</span>
