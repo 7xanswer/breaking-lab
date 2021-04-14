@@ -21,8 +21,8 @@ export class SeasonService {
     return this._httpClient.get<Season[]>(this.endPoint);
   }
 
-  getById(id: number): Observable<Season> {
-    return this._httpClient.get<Season>(this.endPoint + '/' + id);
+  getEpisodes(id: number): Observable<Season[]> {
+    return this._httpClient.get<Season[]>(this.endPoint + '/' + id + '/episodes');
   }
 
   post(season: Season): Observable<Season> {

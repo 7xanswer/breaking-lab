@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '',
     component: SeasonComponent,
     children: [
-      {
+      /*{
         path: '',
         pathMatch: 'full',
         component: SeasonListComponent,
@@ -26,6 +26,19 @@ const routes: Routes = [
       {
         path: 'seasons/:id',
         component: SeasonDetailComponent,
+      },*/
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'seasons'
+      },
+      {
+        path: 'seasons',
+        component: SeasonListComponent
+      },
+      {
+        path: 'seasons/:id/episodes',
+        component: SeasonDetailComponent
       },
       {
         path: '**',

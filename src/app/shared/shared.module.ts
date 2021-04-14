@@ -23,11 +23,14 @@ import { MaterialElevationDirective } from '../material-elevation.directive';
 import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {LayoutModule} from '@angular/cdk/layout';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 @NgModule({
   declarations: [NotFoundComponent, MaterialElevationDirective],
   imports: [CommonModule],
   exports: [
+    MatTooltipModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,

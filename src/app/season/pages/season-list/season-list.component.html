@@ -28,10 +28,12 @@
               <mat-icon class="mr-1" fontSet="material-icons-round">event_busy</mat-icon>
               <span>Final date : {{season.final_date}}</span>
             </mat-chip>
-            <mat-chip color="warn" selected>
-              <mat-icon class="mr-1" fontSet="material-icons-round">movie</mat-icon>
-              <span>Episodes : {{season.episodes}}</span>
-            </mat-chip>
+            <a href="seasons/{{season.id}}/episodes">
+              <mat-chip color="warn" selected matTooltip="Explore season {{season.id}} episodes">
+                <mat-icon class="mr-1" fontSet="material-icons-round">movie</mat-icon>
+                <span>Episodes : {{season.episodes}}</span>
+              </mat-chip>
+            </a>
           </mat-chip-list>
           <p class="mt-3">{{season.introduction}}</p>
           <div class="d-flex">
