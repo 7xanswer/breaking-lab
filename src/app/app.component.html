@@ -2,6 +2,7 @@
   <mat-sidenav
     #drawer
     class="sidenav"
+    position="end"
     fixedInViewport="true">
     <mat-nav-list class="p-0 m-3 d-flex flex-column align-items-center">
       <button class="w-75" mat-raised-button appMaterialElevation [defaultElevation]="6" raisedElevation="24" color="white"
@@ -28,9 +29,11 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <header>
-      <mat-toolbar color="primary" class="mat-elevation-z6">
-        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
-          <mat-icon fontSet="material-icons-round">chevron_right</mat-icon>
+      <mat-toolbar class="toolbar">
+        <div class="root-white m-4">Breaking Lab</div>
+        <span class="example-spacer"></span>
+        <button id="menu-button" class="m-4" type="button" aria-label="Toggle sidenav" (click)="drawer.toggle()">
+          <mat-icon id="menu-icon" fontSet="material-icons-round">menu</mat-icon>
         </button>
       </mat-toolbar>
     </header>

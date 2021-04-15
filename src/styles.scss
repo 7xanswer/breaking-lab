@@ -6,6 +6,10 @@
   --cloud: #e1e7eb;
 }
 
+.example-spacer {
+  flex: 1 1 auto;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -69,4 +73,47 @@ textarea {
 
 a:hover {
   text-decoration: none;
+}
+
+#home {
+  height: 100vh;
+}
+
+h1, p{
+  color: white;
+}
+
+p {
+  font-weight: 700;
+}
+
+html, body {
+  margin: 0;
+}
+
+.toolbar {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  height: 10vh;
+}
+
+#menu-icon {
+  transform: scale(1.8);
+  color: white;
+}
+
+#menu-button{
+  background: none;
+  border: none;
+}
+
+.toolbar:first-child {
+  font-family: "The Bold Font", sans-serif !important;
+  line-height: normal !important;
+  font-size: 1.8rem !important;
+}
+
+.root-white {
+  color: white;
 }
