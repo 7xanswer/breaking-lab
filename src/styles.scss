@@ -15,9 +15,13 @@ html {
   overflow-x: hidden;
 }
 
+.mat-drawer-container, mat-card {
+  background-color : #303030 !important;
+}
 body {
   padding: 0;
   margin: 0;
+  width: 100vw;
 }
 
 ::-webkit-scrollbar {
@@ -25,7 +29,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--charcoal);
+  background-color: #ffd740;
 }
 
 @font-face {
@@ -50,7 +54,7 @@ h3 {
 p {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
-  color: var(--charcoal);
+  color: white;
   font-size: 1rem;
 }
 
@@ -75,26 +79,8 @@ a:hover {
   text-decoration: none;
 }
 
-#home {
-  height: 100vh;
-}
-
-h1, p{
-  color: white;
-}
-
-p {
-  font-weight: 700;
-}
-
-html, body {
-  margin: 0;
-}
-
 .toolbar {
-  position: absolute;
   z-index: 1;
-  background-color: transparent;
   height: 10vh;
 }
 

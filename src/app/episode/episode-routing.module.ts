@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from '../shared/components/not-found/not-found.component';
 import { EpisodeListComponent } from './pages/episode-list/episode-list.component';
-import { EpisodeDetailComponent } from './pages/episode-detail/episode-detail.component';
 import { EpisodeComponent } from './episode.component';
+import {SeasonDetailComponent} from '../season/pages/season-detail/season-detail.component';
 
 const routes: Routes = [
   {
@@ -18,10 +18,6 @@ const routes: Routes = [
       {
         path: 'episodes',
         component: EpisodeListComponent,
-      },
-      {
-        path: 'episodes/:id',
-        component: EpisodeDetailComponent,
       },
       {
         path: '**',

@@ -21,6 +21,22 @@
 ::ng-deep.mat-paginator .mat-paginator-container{
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  color: var(--charcoal);
+  color: white;
   padding: 0;
+}
+
+.mat-paginator{
+  background-color: transparent;
+}
+
+::ng-deep .mat-select-value{
+  color: white;
+}
+
+::ng-deep .mat-select-arrow {
+  color: white;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: transparent;
 }

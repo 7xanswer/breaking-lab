@@ -10,6 +10,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const toolbar = document.querySelector('.toolbar');
+    toolbar.setAttribute('style', 'position: absolute; background-color: transparent;');
+    toolbar.classList.remove('mat-elevation-z6');
   }
-
 }

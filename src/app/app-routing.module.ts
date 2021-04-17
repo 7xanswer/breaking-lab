@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import {HomeComponent} from './home/home.component';
+import {SeasonDetailComponent} from "./season/pages/season-detail/season-detail.component";
 
 const routes: Routes = [
   /*{

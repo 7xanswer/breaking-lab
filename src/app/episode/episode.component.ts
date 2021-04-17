@@ -8,5 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class EpisodeComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const toolbar = document.querySelector('.toolbar');
+    toolbar.setAttribute('style', 'position: relative; background-color: #673ab7;');
+    toolbar.classList.add('mat-elevation-z6');
+  }
 }
