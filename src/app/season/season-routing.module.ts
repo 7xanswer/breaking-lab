@@ -4,6 +4,7 @@ import { NotFoundComponent } from '../shared/components/not-found/not-found.comp
 import { SeasonListComponent } from './pages/season-list/season-list.component';
 import { SeasonDetailComponent } from './pages/season-detail/season-detail.component';
 import { SeasonComponent } from './season.component';
+import {EpisodeComponent} from "../episode/episode.component";
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
       {
         path: 'seasons/:id/episodes',
         component: SeasonDetailComponent
+      },
+      {
+        path: 'episodes',
+        loadChildren: () => import('../episode/episode.module').then(m => m.EpisodeModule)
       },
       {
         path: '**',
