@@ -1,5 +1,5 @@
 <div class="full-screen-video-container">
-  <video class="video" width="1920" height="1080" autoplay muted loop>
+  <video class="video" width="1920" height="1080" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
     <source src="../../assets/videos/breaking-bad.mp4" type="video/mp4" />
     <source src="../../assets/videos/breaking-bad.webm" type="video/webm" />
   </video>
@@ -8,16 +8,33 @@
     <div class="row">
       <div class="col-md-8 p-0 px-3">
         <h1>Breaking Lab</h1>
-        <p>Breaking Lab is an Angular 9 SPA that allows anyone to create, modify or delete elements of the Breaking Bad series timeline.</p>
-        <button mat-raised-button class="my-3 mr-3 mat-elevation-z6" color="warn">
-          Browse episodes
-          <mat-icon class="ml-1" fontSet="material-icons-round">movie</mat-icon>
-        </button>
-        <button mat-raised-button class="mat-elevation-z6" color="accent">
-          Browse seasons
-          <mat-icon class="ml-1" fontSet="material-icons-round">tv</mat-icon>
-        </button>
+        <p>
+          <span>
+            Breaking Lab
+          </span>
+          is an Angular 11 SPA that allows anyone to create, modify or delete elements of the Breaking Bad series timeline.
+        </p>
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <a routerLink="/seasons">
+            <button mat-raised-button class="mt-3 mat-elevation-z6" color="warn">
+              Get started
+              <mat-icon class="ml-1" fontSet="material-icons-round">arrow_forward</mat-icon>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
+  </div>
+  <div id="definition" class="col-md-12 text-center">
+    <p>
+      <span>
+        <i>Breaking Bad</i>
+      </span> jæ bɪtʃ mægnəts
+      <br />
+      <i>proper noun</i>
+    </p>
+    <p class="m-0">
+      an American neo-Western crime drama television series created and produced by Vince Gilligan.
+    </p>
   </div>
 </div>

@@ -2,12 +2,16 @@
   height: 100vh;
 }
 
-h1, p{
-  color: white;
+h1{
+  color: #ffd740;
 }
 
 p {
   font-weight: 700;
+}
+
+p span {
+  color: #ffd740;
 }
 
 html, body {
@@ -47,4 +51,11 @@ html, body {
   transform: translate(-50%, -50%);
   filter: saturate(110%);
   opacity: 0.90;
+}
+
+#definition {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -30,15 +30,9 @@ export class EpisodeFormComponent implements OnInit {
 
     if (data.toUpdate) {
       this.episodeForm = this.fb.group({
-        title: [
-          data.episode.title,
-          [Validators.required, this.noWhitespaceValidator],
-        ],
-        synopsis: [
-          data.episode.synopsis,
-          [Validators.required, this.noWhitespaceValidator],
-        ],
-        season_id: [data.episode.seasonId, [Validators.required]],
+        title: [data.episode.title, [Validators.required]],
+        synopsis: [data.episode.synopsis, [Validators.required]],
+        seasonId: [data.episode.seasonId, [Validators.required]],
         episode: [data.episode.episode, [Validators.required]],
         air_date: [data.episode.air_date, [Validators.required]],
         rating: [data.episode.rating, [Validators.required]],
@@ -48,9 +42,9 @@ export class EpisodeFormComponent implements OnInit {
       });
     } else {
       this.episodeForm = this.fb.group({
-        title: ['', [Validators.required, this.noWhitespaceValidator]],
-        synopsis: ['', [Validators.required, this.noWhitespaceValidator]],
-        season_id: ['', [Validators.required]],
+        title: ['', [Validators.required]],
+        synopsis: ['', [Validators.required]],
+        seasonId: ['', [Validators.required]],
         episode: ['', [Validators.required]],
         air_date: ['', [Validators.required]],
         rating: ['', [Validators.required]],
@@ -68,13 +62,13 @@ export class EpisodeFormComponent implements OnInit {
       if (this.data.toUpdate) {
         episode.id = this.data.episode.id;
         this._episodeService.put(episode).subscribe((next) => {
-          console.log('YES WE DID IT !!! WE HAVE updated A SEASON');
+          console.log('Episode updated');
           this.episodeForm.reset();
           this._dialogRef.close();
         });
       } else {
         this._episodeService.post(episode).subscribe((next) => {
-          console.log('YES WE DID IT !!! WE HAVE ADDED A NEW SEASON');
+          console.log('Episode added');
           this.episodeForm.reset();
           this._dialogRef.close();
         });

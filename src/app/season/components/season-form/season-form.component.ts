@@ -58,13 +58,13 @@ export class SeasonFormComponent implements OnInit {
       if (this.data.toUpdate) {
         season.id = this.data.season.id;
         this._seasonService.put(season).subscribe((next) => {
-          console.log('YES WE DID IT !!! WE HAVE updated A SEASON');
+          console.log('Season updated');
           this.seasonForm.reset();
           this._dialogRef.close();
         });
       } else {
         this._seasonService.post(season).subscribe((next) => {
-          console.log('YES WE DID IT !!! WE HAVE ADDED A NEW SEASON');
+          console.log('Season added');
           this.seasonForm.reset();
           this._dialogRef.close();
         });

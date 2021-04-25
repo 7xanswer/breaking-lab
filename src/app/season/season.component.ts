@@ -11,7 +11,7 @@ export class SeasonComponent implements OnInit {
 
   ngOnInit(): void {
     const toolbar = document.querySelector('.toolbar');
-    toolbar.setAttribute('style', 'position: relative; background-color: #673ab7;');
+    toolbar.setAttribute('style', 'position: relative; background-color: #303030;');
     toolbar.classList.add('mat-elevation-z6');
   }
 

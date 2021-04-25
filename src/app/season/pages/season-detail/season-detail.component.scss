@@ -1,10 +1,11 @@
 #card {
   border-radius: 10px;
   height: 100%;
+  cursor: pointer;
 }
 
 #card_content {
-  padding: 16px;
+  padding: 24px 16px;
   border-radius: 10px 10px 0 0;
 }
 

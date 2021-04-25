@@ -18,6 +18,7 @@ html {
 .mat-drawer-container, mat-card {
   background-color : #303030 !important;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -30,6 +31,10 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #ffd740;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #303030;
 }
 
 @font-face {
@@ -79,6 +84,10 @@ a:hover {
   text-decoration: none;
 }
 
+li a, a:hover {
+  color: white;
+}
+
 .toolbar {
   z-index: 1;
   height: 10vh;
@@ -102,4 +111,21 @@ a:hover {
 
 .root-white {
   color: white;
+}
+
+.heading h1, p > span{
+  color: #ffd740;
+}
+
+.heading {
+  margin-bottom: 8vh;
+}
+
+.content {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+.mat-sidenav {
+  background-color: #303030 !important;
 }

@@ -1,14 +1,11 @@
-$c_0: #000000;
-$c_1: #353540;
-
-
 #card {
   border-radius: 10px;
   height: 100%;
+  cursor: pointer;
 }
 
 #card_content {
-  padding: 16px;
+  padding: 24px 16px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -20,13 +17,6 @@ $c_1: #353540;
 
 .imdb {
   border-radius: 10px 4px 4px 4px;
-}
-
-::ng-deep.mat-paginator .mat-paginator-container{
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
-  color: var(--charcoal);
-  padding: 0;
 }
 
 ::ng-deep.mat-paginator .mat-paginator-container{

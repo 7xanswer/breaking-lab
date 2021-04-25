@@ -1,44 +1,56 @@
-<div class="container py-4">
-  <div class="col-md-12 p-0 d-flex align-items-center justify-content-start">
-    <button mat-raised-button class="my-3 mat-elevation-z6" color="warn" (click)="openDialog(false, undefined)">
-      Add your season
-      <mat-icon class="ml-1" fontSet="material-icons-round">lightbulb</mat-icon>
-    </button>
-  </div>
-  <div fxLayout="row wrap" fxLayoutGap="0.8rem grid">
-    <div *ngFor="let season of seasons$ | async"
-         fxFlex="50%" fxFlex.md="50%" fxFlex.sm="100%" fxFlex.xs="100%" data-aos="fade-up" data-aos-duration="1000">
-      <mat-card id="card" appMaterialElevation [defaultElevation]="6" raisedElevation="24">
-        <mat-card-content>
-          <mat-chip-list aria-label="Fish selection">
-            <mat-chip color="primary">
-              <mat-icon class="mr-1" fontSet="material-icons-round">tv</mat-icon>
-              <span>Season n° : {{season.id}}</span>
-            </mat-chip>
-
-            <mat-chip color="primary" selected>
-              <mat-icon class="mr-1" fontSet="material-icons-round">event_available</mat-icon>
-              <span>Release date : {{season.release_date}}</span>
-            </mat-chip>
-            <mat-chip color="accent" selected>
-              <mat-icon class="mr-1" fontSet="material-icons-round">event_busy</mat-icon>
-              <span>Final date : {{season.final_date}}</span>
-            </mat-chip>
-            <a href="seasons/{{season.id}}/episodes">
-              <mat-chip color="warn" selected matTooltip="Explore season {{season.id}} episodes">
-                <mat-icon class="mr-1" fontSet="material-icons-round">movie</mat-icon>
-                <span>Episodes : {{season.episodes}}</span>
-              </mat-chip>
-            </a>
-          </mat-chip-list>
-          <p class="mt-3">{{season.introduction}}</p>
-          <div class="d-flex">
-            <button class="mat-elevation-z6 mr-2" mat-raised-button color="primary" (click)="openDialog(true, season)">Edit story</button>
-            <button mat-button color="warn" (click)="delete(season)">Erase memories</button>
-          </div>
-          
-        </mat-card-content>
-      </mat-card>
+<section class="content">
+  <div class="container heading">
+    <div class="col-md-12 p-0 d-flex align-items-center justify-content-start">
+      <div>
+        <h1 class="root-white" data-aos="fade-down" data-aos-duration="1000">Seasons</h1>
+        <p>
+          <span>Find the details of the original 6 seasons of <i>Breaking Bad</i> chronologically.</span>
+          <br>
+          <span class="root-white">Discover the episodes by season using the button provided to find out more.</span>
+        </p>
+        <button mat-raised-button class="mt-2 mat-elevation-z6" color="warn" (click)="openDialog(false, undefined)">
+          Add your season
+          <mat-icon class="ml-1" fontSet="material-icons-round">tv</mat-icon>
+        </button>
+      </div>
     </div>
   </div>
-</div>
+  <div class="container">
+    <div fxLayout="row wrap" fxLayoutGap="0.8rem grid">
+      <div *ngFor="let season of seasons$ | async"
+           fxFlex="50%" fxFlex.md="50%" fxFlex.sm="100%" fxFlex.xs="100%" data-aos="fade-up" data-aos-duration="1000">
+        <mat-card id="card" appMaterialElevation [defaultElevation]="6" raisedElevation="24">
+          <mat-card-content>
+            <a href="seasons/{{season.id}}/episodes">
+              <button mat-raised-button class="mb-4 mat-elevation-z6" color="warn">
+                The {{season.episodes}} episodes
+                <mat-icon class="ml-1" fontSet="material-icons-round">movie</mat-icon>
+              </button>
+            </a>
+            <mat-chip-list aria-label="Fish selection">
+              <mat-chip color="primary" selected>
+                <mat-icon class="mr-1" fontSet="material-icons-round">tv</mat-icon>
+                <span>Season n° : {{season.id}}</span>
+              </mat-chip>
+              <mat-chip>
+                <mat-icon class="mr-1" fontSet="material-icons-round">event_available</mat-icon>
+                <span>Release date : {{season.release_date}}</span>
+              </mat-chip>
+              <mat-chip color="accent" selected>
+                <mat-icon class="mr-1" fontSet="material-icons-round">event_busy</mat-icon>
+                <span>Final date : {{season.final_date}}</span>
+              </mat-chip>
+            </mat-chip-list>
+            <p class="mt-3">
+              <span class="root-white">{{season.introduction}}</span>
+            </p>
+            <div class="d-flex pt-3">
+              <button class="mat-elevation-z6 mr-2" mat-raised-button color="primary" (click)="openDialog(true, season)">Edit story</button>
+              <button mat-button color="warn" (click)="delete(season)">Erase memories</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

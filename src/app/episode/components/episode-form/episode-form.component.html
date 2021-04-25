@@ -3,7 +3,7 @@
 
     <mat-form-field appearance="outline">
       <mat-label>Title</mat-label>
-      <input matInput placeholder="31/12/1999" type="text" formControlName="title" required>
+      <input matInput placeholder="Episode V – The Empire Strikes Back" type="text" formControlName="title" required>
       <mat-icon matSuffix color="primary" fontSet="material-icons-round">bookmark</mat-icon>
     </mat-form-field>
 
@@ -53,10 +53,16 @@
       <input matInput placeholder="https://www.fbi.gov/wanted/notme.jpg" type="text" formControlName="thumbnail" required>
       <mat-icon matSuffix color="primary" fontSet="material-icons-round">crop_original</mat-icon>
     </mat-form-field>
-
   </mat-dialog-content>
 
-  <p>{{episodeForm.valid}}</p>
+  <div *ngIf="episodeForm.valid then valid else warning"></div>
+  <ng-template #valid>
+    <span>Episode ready to submit ✔️</span>
+  </ng-template>
+  <ng-template #warning>
+    <span>Episode not ready to submit ❌</span>
+  </ng-template>
+
   <mat-dialog-actions align="center">
     <button mat-dialog-close class="mat-elevation-z6" mat-raised-button color="warn">Cancel</button>
     <button class="mat-elevation-z6" mat-raised-button color="primary" type="submit" cdkFocusInitial [disabled]="!episodeForm.valid">{{formAction}}</button>
