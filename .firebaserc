@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "breaking-lab": {
+      "hosting": {
+        "breaking-lab": [
+          "breaking-lab"
+        ]
+      }
+    }
+  }
+}

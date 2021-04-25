@@ -25,7 +25,7 @@ html, body {
   width: 100%;
   height: 100%;
   background: #000000;
-  opacity: (40%);
+  opacity: 0.5;
   mix-blend-mode: overlay;
 }
 
@@ -49,13 +49,12 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: saturate(110%);
-  opacity: 0.90;
+  opacity: 0.7;
 }
 
 #definition {
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

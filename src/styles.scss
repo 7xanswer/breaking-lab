@@ -129,3 +129,10 @@ li a, a:hover {
 .mat-sidenav {
   background-color: #303030 !important;
 }
+
+@media (max-width: 576px) {
+
+  h1 {
+    font-size: 3rem !important;
+  }
+}

@@ -57,10 +57,10 @@
 
   <div *ngIf="episodeForm.valid then valid else warning"></div>
   <ng-template #valid>
-    <span>Episode ready to submit ✔️</span>
+    <span class="text-success">Episode ready to submit</span>
   </ng-template>
   <ng-template #warning>
-    <span>Episode not ready to submit ❌</span>
+    <span class="text-danger">Episode not ready to submit</span>
   </ng-template>
 
   <mat-dialog-actions align="center">

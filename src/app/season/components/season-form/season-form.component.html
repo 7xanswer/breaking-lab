@@ -27,10 +27,10 @@
 
   <div *ngIf="seasonForm.valid then valid else warning"></div>
   <ng-template #valid>
-    <span>Season ready to submit ✔️</span>
+    <span class="text-success">Season ready to submit</span>
   </ng-template>
   <ng-template #warning>
-    <span>Season not ready to submit ❌</span>
+    <span class="text-danger">Season not ready to submit</span>
   </ng-template>
 
   <mat-dialog-actions align="center">
