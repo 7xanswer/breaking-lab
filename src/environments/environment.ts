@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  seasonEndpoint: 'http://localhost:3000/seasons',
-  episodeEndpoint: 'http://localhost:3000/episodes',
+  seasonEndpoint: 'https://breaking-lab-api.herokuapp.com/seasons',
+  episodeEndpoint: 'https://breaking-lab-api.herokuapp.com/episodes',
 };
 
 /*
